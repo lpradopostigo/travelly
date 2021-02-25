@@ -88,7 +88,7 @@ header {
 }
 
 #new-york-page {
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   @include backgroundImage("./img/new-york-page.png");
@@ -128,7 +128,7 @@ header {
 
     h2 {
       font-weight: 400;
-      margin-top: 4rem;
+      margin-top: 3rem;
       font-size: $std-font-size;
     }
   }

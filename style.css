@@ -99,7 +99,7 @@ header nav ul {
 }
 
 #new-york-page {
-  min-height: 90vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +150,7 @@ header nav ul {
 
 #new-york-page div h2 {
   font-weight: 400;
-  margin-top: 4rem;
+  margin-top: 3rem;
   font-size: 1.6rem;
 }
 
