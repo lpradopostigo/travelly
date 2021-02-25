@@ -95,16 +95,20 @@ header {
   position: relative;
   overflow: hidden;
 
-  #cloud1 {
+  .cloud {
+    width: 100vw;
     position: absolute;
+    // max-height: 60vh;
+  }
+
+  #cloud1 {
     top: 0;
     right: 0;
     z-index: 0;
   }
 
   #cloud2 {
-    position: absolute;
-    top: 10vh;
+    top: 5vh;
     right: 0;
     z-index: -1;
   }
@@ -138,9 +142,20 @@ header {
   }
 }
 
+@media (max-width: 660px) {
+  #new-york-page {
+    div {
+      margin: auto auto auto 5vw;
+      width: 70vw;
+    }
+  }
+}
 // mobile view
 @media (max-width: 426px) {
   html {
     font-size: 50%;
   }
+}
+
+@keyframes cloud {
 }

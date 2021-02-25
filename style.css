@@ -116,16 +116,19 @@ header nav ul {
   overflow: hidden;
 }
 
-#new-york-page #cloud1 {
+#new-york-page .cloud {
+  width: 100vw;
   position: absolute;
+}
+
+#new-york-page #cloud1 {
   top: 0;
   right: 0;
   z-index: 0;
 }
 
 #new-york-page #cloud2 {
-  position: absolute;
-  top: 10vh;
+  top: 5vh;
   right: 0;
   z-index: -1;
 }
@@ -155,6 +158,13 @@ header nav ul {
   nav h1 {
     text-align: center;
     padding: 1rem;
+  }
+}
+
+@media (max-width: 660px) {
+  #new-york-page div {
+    margin: auto auto auto 5vw;
+    width: 70vw;
   }
 }
 
