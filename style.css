@@ -144,7 +144,7 @@ header nav ul {
   font-size: 4rem;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  text-underline-offset: 2rem;
+  text-underline-offset: 1rem;
   text-decoration-thickness: 0.5rem;
 }
 
