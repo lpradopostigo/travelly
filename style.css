@@ -164,13 +164,27 @@ header nav ul {
 @media (max-width: 660px) {
   #new-york-page div {
     margin: auto auto auto 5vw;
-    width: 70vw;
+    width: 65vw;
   }
 }
 
 @media (max-width: 426px) {
   html {
     font-size: 50%;
+  }
+}
+
+@-webkit-keyframes cloud {
+  from {
+  }
+  to {
+  }
+}
+
+@keyframes cloud {
+  from {
+  }
+  to {
   }
 }
 /*# sourceMappingURL=style.css.map */
