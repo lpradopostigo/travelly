@@ -119,6 +119,8 @@ header nav ul {
 #new-york-page .cloud {
   width: 100vw;
   position: absolute;
+  -webkit-animation: cloud 6s ease-in-out infinite;
+          animation: cloud 6s ease-in-out infinite;
 }
 
 #new-york-page #cloud1 {
@@ -175,16 +177,24 @@ header nav ul {
 }
 
 @-webkit-keyframes cloud {
-  from {
+  0% {
   }
-  to {
+  50% {
+    -webkit-transform: translate(10%, -15%);
+            transform: translate(10%, -15%);
+  }
+  100% {
   }
 }
 
 @keyframes cloud {
-  from {
+  0% {
   }
-  to {
+  50% {
+    -webkit-transform: translate(10%, -15%);
+            transform: translate(10%, -15%);
+  }
+  100% {
   }
 }
 /*# sourceMappingURL=style.css.map */
