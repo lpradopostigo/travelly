@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #121c27;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  min-height: 10vh;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90vw;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav h1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  font-size: 1.6rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+#landing-page {
+  min-height: 90vh;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(transparent)), url("./img/landing-page.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#landing-page h1 {
+  font-size: 4rem;
+}
+
+#landing-page h2 {
+  font-weight: 400;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+#landing-page button {
+  color: white;
+  font-size: 1.6rem;
+  background-color: #486d99;
+  border: none;
+  padding: 2rem 6rem;
+  margin-top: 2rem;
+}
+
+#new-york-page {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(transparent)), url("./img/new-york-page.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./img/new-york-page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#new-york-page #cloud1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+#new-york-page #cloud2 {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  z-index: -1;
+}
+
+#new-york-page div {
+  width: 90vw;
+  margin: auto;
+  padding-bottom: 10rem;
+  z-index: 1;
+}
+
+#new-york-page div h1 {
+  font-size: 4rem;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-underline-offset: 2rem;
+  text-decoration-thickness: 0.5rem;
+}
+
+#new-york-page div h2 {
+  font-weight: 400;
+  margin-top: 4rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 933px) {
+  nav h1 {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 426px) {
+  html {
+    font-size: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
