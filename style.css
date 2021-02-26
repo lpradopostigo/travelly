@@ -156,6 +156,94 @@ header nav ul {
   font-size: 1.6rem;
 }
 
+#card-page {
+  min-height: 100vh;
+}
+
+#card-page header {
+  background-color: #353b45;
+  color: white;
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#card-page header h1 {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+#card-page header h2 {
+  font-size: 1.6rem;
+  margin: 2rem;
+  font-weight: 400;
+}
+
+#card-page #cards {
+  width: 90vw;
+  margin: auto;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#card-page #cards .card {
+  text-align: center;
+  min-width: 10vw;
+  min-height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25rem;
+          flex: 1 1 25rem;
+  margin: 2rem 5rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+#card-page #cards .card .icon {
+  background: #353b45;
+}
+
+#card-page #cards .card .icon img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+#card-page #cards .card h1 {
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+#card-page #cards .card p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 2rem;
+}
+
 @media (max-width: 933px) {
   nav h1 {
     text-align: center;

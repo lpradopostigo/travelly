@@ -13,7 +13,11 @@ html {
 
 $std-font-size: 1.6rem;
 $big-header-font: 4rem;
+$medium-header-font: 3rem;
+$small-header-font: 2.2rem;
 
+$dark-blue: #121c27;
+$blue: #353b45;
 @mixin backgroundImage($url) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url($url);
   background-repeat: no-repeat;
@@ -28,7 +32,7 @@ body {
 }
 
 header {
-  background-color: #121c27;
+  background-color: $dark-blue;
 
   nav {
     display: flex;
@@ -134,6 +138,69 @@ header {
   }
 }
 
+#card-page {
+  min-height: 100vh;
+  header {
+    background-color: $blue;
+    color: white;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      font-size: $big-header-font;
+      margin: 2rem;
+    }
+
+    h2 {
+      font-size: $std-font-size;
+      margin: 2rem;
+      font-weight: 400;
+    }
+  }
+  #cards {
+    width: 90vw;
+    margin: auto;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+      text-align: center;
+      min-width: 10vw;
+      min-height: 40vh;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 25rem;
+      margin: 2rem 5rem;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
+
+      .icon {
+        background: $blue;
+        img {
+          max-width: 15%;
+          margin: 2rem;
+        }
+      }
+
+      h1 {
+        font-size: $small-header-font;
+        padding: 2rem;
+      }
+
+      p {
+        font-size: $std-font-size;
+        font-weight: 400;
+        padding: 2rem;
+      }
+    }
+  }
+}
+
 // nav wrapping
 @media (max-width: 933px) {
   nav h1 {
@@ -160,11 +227,9 @@ header {
 @keyframes cloud {
   0% {
   }
-
   50% {
     transform: translate(10%, -15%);
   }
-
   100% {
   }
 }
