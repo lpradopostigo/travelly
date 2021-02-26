@@ -209,6 +209,74 @@ header {
   }
 }
 
+#contact-page {
+  min-height: 100vh;
+  @include backgroundImage("./img/contact-mountain.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  #form-box {
+    color: white;
+    width: 60vw;
+    // display: flex;
+    // flex-direction: column;
+    // position: relative;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+    h1 {
+      padding: 2rem;
+      text-align: center;
+      font-size: $big-header-font;
+      font-weight: 400;
+    }
+    form {
+      // margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        text-align: center;
+
+        flex-wrap: wrap;
+
+        label {
+          min-width: 15vw;
+          font-size: $std-font-size;
+          font-weight: 400;
+          text-align: center;
+        }
+        input {
+          min-width: 30vw;
+          min-height: 2.5rem;
+          font-size: $std-font-size;
+          border: none;
+          background: rgb(66, 83, 92);
+          color: white;
+          border-radius: 0.5rem;
+        }
+      }
+
+      button {
+        width: 60vw;
+        min-height: 5vh;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        border: none;
+        font-size: $small-header-font;
+        font-weight: 400;
+        color: white;
+        background: $dark-blue;
+        margin-top: 5rem;
+      }
+    }
+  }
+}
+
 // nav wrapping
 @media (max-width: 933px) {
   nav h1 {

@@ -253,6 +253,99 @@ header nav ul {
   padding: 2rem;
 }
 
+#contact-page {
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(transparent)), url("./img/contact-mountain.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./img/contact-mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact-page #form-box {
+  color: white;
+  width: 60vw;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+}
+
+#contact-page #form-box h1 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+#contact-page #form-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact-page #form-box form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact-page #form-box form div label {
+  min-width: 15vw;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#contact-page #form-box form div input {
+  min-width: 30vw;
+  min-height: 2.5rem;
+  font-size: 1.6rem;
+  border: none;
+  background: #42535c;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+#contact-page #form-box form button {
+  width: 60vw;
+  min-height: 5vh;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: none;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: white;
+  background: #121c27;
+  margin-top: 5rem;
+}
+
 @media (max-width: 933px) {
   nav h1 {
     text-align: center;
