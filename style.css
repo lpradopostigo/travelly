@@ -33,6 +33,11 @@ header nav {
       flex-wrap: wrap;
 }
 
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
 header nav h1 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
@@ -92,10 +97,14 @@ header nav ul {
 #landing-page button {
   color: white;
   font-size: 1.6rem;
-  background-color: #486d99;
+  background-color: #467ea6;
   border: none;
   padding: 2rem 6rem;
   margin-top: 2rem;
+}
+
+#landing-page button:hover {
+  background-color: #486d99;
 }
 
 #new-york-page {
@@ -225,7 +234,7 @@ header nav ul {
 }
 
 #card-page #cards .card .icon {
-  background: #353b45;
+  background: #42535c;
 }
 
 #card-page #cards .card .icon img {

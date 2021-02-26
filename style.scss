@@ -18,6 +18,7 @@ $small-header-font: 2.2rem;
 
 $dark-blue: #121c27;
 $blue: #353b45;
+
 @mixin backgroundImage($url) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url($url);
   background-repeat: no-repeat;
@@ -43,6 +44,10 @@ header {
     width: 90vw;
     margin: auto;
     flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: white;
+    }
 
     h1 {
       flex: 1 1 40rem;
@@ -84,10 +89,13 @@ header {
   button {
     color: white;
     font-size: $std-font-size;
-    background-color: #486d99;
+    background-color: #467ea6;
     border: none;
     padding: 2rem 6rem;
     margin-top: 2rem;
+    &:hover {
+      background-color: #486d99;
+    }
   }
 }
 
@@ -180,7 +188,7 @@ header {
         0px 20px 20px rgba(0, 0, 0, 0.1);
 
       .icon {
-        background: $blue;
+        background: #42535c;
         img {
           max-width: 15%;
           margin: 2rem;
