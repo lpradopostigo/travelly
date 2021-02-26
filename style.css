@@ -325,7 +325,7 @@ header nav ul {
 
 #contact-page #form-box form div input {
   min-width: 30vw;
-  min-height: 2.5rem;
+  padding: 0.5rem;
   font-size: 1.6rem;
   border: none;
   background: #42535c;
@@ -335,7 +335,7 @@ header nav ul {
 
 #contact-page #form-box form button {
   width: 60vw;
-  min-height: 5vh;
+  padding: 2rem;
   border-bottom-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
   border: none;
