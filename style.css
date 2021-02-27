@@ -81,8 +81,8 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(transparent)), url("./img/landing-page.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./img/landing-page.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(transparent)), url("./img/landing-page.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("./img/landing-page.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -389,7 +389,7 @@ footer div ul {
 }
 
 footer div ul img {
-  height: 2.5vh;
+  height: 1.9rem;
   margin: 2rem;
 }
 

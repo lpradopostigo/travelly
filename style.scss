@@ -23,8 +23,9 @@ $small-header-font: 2.2rem;
 $dark-blue: #121c27;
 $blue: #353b45;
 
-@mixin backgroundImage($url) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url($url);
+@mixin backgroundImage($url, $alpha) {
+  background-image: linear-gradient(rgba(0, 0, 0, $alpha), transparent),
+    url($url);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -78,7 +79,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include backgroundImage("./img/landing-page.jpg");
+  @include backgroundImage("./img/landing-page.jpg", 0.8);
 
   h1 {
     font-size: $big-header-font;
@@ -107,7 +108,7 @@ header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  @include backgroundImage("./img/new-york-page.png");
+  @include backgroundImage("./img/new-york-page.png", 0.4);
   position: relative;
   overflow: hidden;
 
@@ -215,7 +216,7 @@ header {
 
 #contact-page {
   min-height: 100vh;
-  @include backgroundImage("./img/contact-mountain.png");
+  @include backgroundImage("./img/contact-mountain.png", 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,7 +304,7 @@ footer {
       align-items: center;
 
       img {
-        height: 2.5vh;
+        height: 1.9rem;
         margin: 2rem;
       }
     }
