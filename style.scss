@@ -9,6 +9,10 @@ html {
   font-size: 62.5%;
 }
 
+button {
+  cursor: pointer;
+}
+
 // functions and variables
 
 $std-font-size: 1.6rem;
@@ -270,8 +274,37 @@ header {
         font-size: $small-header-font;
         font-weight: 400;
         color: white;
-        background: $dark-blue;
+        background: #5c4b4c;
         margin-top: 5rem;
+      }
+    }
+  }
+}
+
+footer {
+  color: white;
+  background: $dark-blue;
+
+  div {
+    justify-content: space-between;
+    width: 90vw;
+    min-height: 10vh;
+    margin: auto;
+    display: flex;
+    flex: 1 1 40rem;
+    align-items: center;
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 2.5vh;
+        margin: 2rem;
       }
     }
   }
